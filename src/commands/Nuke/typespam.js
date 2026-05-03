@@ -32,7 +32,6 @@ export default {
 
     for (let i = 0; i < amount; i++) {
       await interaction.channel.send(`DOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOU ${i + 1}`);
-      await new Promise(r => setTimeout(r, 0)); // delay prevents spam
     }
 
     const time = Date.now() - start;
