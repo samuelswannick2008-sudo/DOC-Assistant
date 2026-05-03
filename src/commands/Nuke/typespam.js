@@ -2,11 +2,11 @@ import { SlashCommandBuilder, PermissionFlagsBits } from "discord.js";
 
 export default {
   data: new SlashCommandBuilder()
-    .setName("loadtest")
-    .setDescription("Safely test bot message performance (admin only)")
+    .setName("typespam")
+    .setDescription("spam and be annoying")
     .addIntegerOption(opt =>
       opt.setName("amount")
-        .setDescription("How many messages to send (max 20)")
+        .setDescription("how many spam")
         .setRequired(true)
     )
     .setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
@@ -31,8 +31,8 @@ export default {
     const start = Date.now();
 
     for (let i = 0; i < amount; i++) {
-      await interaction.channel.send(`Load test message ${i + 1}`);
-      await new Promise(r => setTimeout(r, 500)); // delay prevents spam
+      await interaction.channel.send(`DOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOU ${i + 1}`);
+      await new Promise(r => setTimeout(r, 0)); // delay prevents spam
     }
 
     const time = Date.now() - start;
