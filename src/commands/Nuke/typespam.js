@@ -31,7 +31,7 @@ export default {
     const start = Date.now();
 
     for (let i = 0; i < amount; i++) {
-      await interaction.channel.send(`DOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOU ${i + 1}`);
+      await interaction.channel.send(`DOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOUDOC OWNS YOU`);
     }
 
     const time = Date.now() - start;
